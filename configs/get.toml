@@ -1,0 +1,6 @@
+html_lang = 'zh-CN'
+head_title = 'Web 模板'
+age = 10
+checked_software = 'checked'
+checked_tunning = ''
+hobbies = ''

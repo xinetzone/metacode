@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="${html_lang}">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${head_title}</title>
+</head>
+
+<body>
+  <form method="get" action=''>
+    <p>
+      <label for="age">Age: </label>
+      <input type="text" id="age" name="age" value="${age}">
+    </p>
+    <p>
+      Hobbies:
+      <input name="hobbies" type="checkbox" id="software" value="software" checked="${checked_software}">
+      <label for="software">Software</label>
+      <input name="hobbies" type="checkbox" id="tunning" value="tunning" checked="${checked_tunning}">
+      <label for="tunning">Auto Tunning</label>
+    </p>
+    <p>
+      <input type="submit" value="Submit" aria-label="Submit">
+    </p>
+  </form>
+  <p>
+    Age: ${age}<br>
+    <label for='Submit'>Hobbies: ${hobbies}</label>
+  </p>
+</body>
+
+</html>
