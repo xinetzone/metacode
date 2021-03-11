@@ -26,15 +26,15 @@ class Html:
         else:
             return {}
 
+    @property
+    def config(self):
+        return self._configure
+
     def __repr__(self):
-        return self.template.substitute(self.configure)
+        return self.template.substitute(self.config)
 
     def encode(self, encoding='utf-8'):
         return repr(self).encode(encoding)
 
-    @property
-    def configure(self):
-        return self._configure
-
-    def update_content(self, config):
-        self.configure.update(config)
+    def update(self, config):
+        self.config.update(config)
