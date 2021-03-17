@@ -1,0 +1,3 @@
+[submodule "public/js/xinet-js"]
+	path = public/js/xinet-js
+	url = git@github.com:xinetzone/xinet-js.git
