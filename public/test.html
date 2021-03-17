@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>上位机软件设计</title>
+  <link rel="stylesheet" href="css/main.css">
+  <base href='https://xinetzone.github.io/'>
+  <script type='module' src="./xinet-js/home.js" async></script>
+  <!-- <script src="./xinet-js/interface.js" async></script> -->
+</head>
+
+<body>
+  <header class="w3-bar w3-light-grey w3-bottombar">
+    <section class="w3-dropdown-hover">
+      <button class="w3-button w3-padding-small"><i class="fa fa-file">&nbsp;文件</i></button>
+      <ul class="w3-dropdown-content w3-bar-block w3-card-4">
+        <li>
+          <label for="folder" class="w3-bar-item w3-button"><i class="fa fa-folder">&nbsp;Folder</i></label>
+        </li>
+        <li>
+          <label for="file" class="w3-bar-item w3-button"><i class="fa fa-file-text">&nbsp;File</i></label>
+        </li>
+        <li>
+          <label for="trash" class="w3-bar-item w3-button"><i class="fa fa-trash">&nbsp;Trash</i></label>
+        </li>
+        <li>
+          <label for="close" class="w3-bar-item w3-button"><i class="fa fa-close">&nbsp;Close</i></label>
+        </li>
+      </ul>
+    </section>
+
+    <section class="w3-dropdown-hover">
+      <button class="w3-button w3-padding-small"><i class="fa fa-edit">&nbsp;编辑</i></button>
+      <ul class="w3-dropdown-content w3-bar-block w3-card-4">
+        <li>
+          <label for="cv" class="w3-bar-item w3-button"><i class="fa fa-line-chart">&nbsp;视觉</i></label>
+        </li>
+        <li>
+          <label for="radar" class="w3-bar-item w3-button"><i class="fa fa-rocket">&nbsp;雷达</i></label>
+        </li>
+        <li>
+          <label for="car" class="w3-bar-item w3-button"><i class="fa fa-car">&nbsp;车辆信息</i></label>
+        </li>
+        <li>
+          <label for="adas" class="w3-bar-item w3-button"><i class="fa fa-th">&nbsp;ADAS 主要功能</i></label>
+        </li>
+      </ul>
+    </section>
+
+    <button class="w3-bar-item w3-button w3-padding-small"><i class="fa fa-play">&nbsp;运行</i></button>
+
+    <section class="w3-dropdown-hover">
+      <button class="w3-button w3-padding-small"><i class="fa fa-photo">&nbsp;可视化</i></button>
+      <ul class="w3-dropdown-content w3-bar-block w3-card-4">
+        <li>
+          <label for="display-cv" class="w3-bar-item w3-button"><i class="fa fa-line-chart">&nbsp;视觉</i></label>
+        </li>
+        <li>
+          <label for="display-radar" class="w3-bar-item w3-button"><i class="fa fa-rocket">&nbsp;雷达</i></label>
+        </li>
+        <li>
+          <label for="display-car" class="w3-bar-item w3-button"><i class="fa fa-car">&nbsp;车辆信息</i></label>
+        </li>
+      </ul>
+    </section>
+  </header>
+  <input type="file" id="file" name="file" multiple hidden>
+
+  <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+    <input aria-label="b" type="range" name="b" value="50" /> +
+    <input aria-label="a" type="number" name="a" value="10" /> =
+    <output name="result"></output>
+  </form>
+
+</body>
+
+</html>

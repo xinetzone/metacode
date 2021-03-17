@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="${lang}">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${title}</title>
+  <link rel="stylesheet" href="/static/css/main.css">
+  <base href='https://xinetzone.github.io/'>
+  <script type='module' src="./xinet-js/home.js" async></script>
+  <!-- <script src="./xinet-js/interface.js" async></script> -->
+</head>
+
+<body>
+  <header class="w3-bar w3-light-grey w3-bottombar">
+    <section class="w3-dropdown-hover">
+      <button class="w3-button w3-padding-small"><i class="fa fa-file">&nbsp;${file}</i></button>
+      <ul class="w3-dropdown-content w3-bar-block w3-card-4">
+        <li>
+          <label for="open_file" class="w3-bar-item w3-button"><i class="fa fa-file-text">&nbsp;${open_file}</i></label>
+        </li>
+        <li>
+          <label for="trash" class="w3-bar-item w3-button"><i class="fa fa-trash">&nbsp;${trash}</i></label>
+        </li>
+        <li>
+          <label for="close" class="w3-bar-item w3-button"><i class="fa fa-close">&nbsp;${close}</i></label>
+        </li>
+      </ul>
+    </section>
+
+    <section class="w3-dropdown-hover">
+      <button class="w3-button w3-padding-small"><i class="fa fa-edit">&nbsp;${edit}</i></button>
+      <ul class="w3-dropdown-content w3-bar-block w3-card-4">
+        <li>
+          <label for="cv" class="w3-bar-item w3-button"><i class="fa fa-line-chart">&nbsp;${cv}</i></label>
+        </li>
+        <li>
+          <label for="radar" class="w3-bar-item w3-button"><i class="fa fa-rocket">&nbsp;${radar}</i></label>
+        </li>
+        <li>
+          <label for="vehicle" class="w3-bar-item w3-button"><i class="fa fa-car">&nbsp;${vehicle}</i></label>
+        </li>
+        <li>
+          <label for="adas" class="w3-bar-item w3-button"><i class="fa fa-th">&nbsp;${adas}</i></label>
+        </li>
+      </ul>
+    </section>
+
+    <button class="w3-bar-item w3-button w3-padding-small"><i class="fa fa-play">&nbsp;${run}</i></button>
+
+    <section class="w3-dropdown-hover">
+      <button class="w3-button w3-padding-small"><i class="fa fa-photo">&nbsp;${display}</i></button>
+      <ul class="w3-dropdown-content w3-bar-block w3-card-4">
+        <li>
+          <label for="display_cv" class="w3-bar-item w3-button"><i
+               class="fa fa-line-chart">&nbsp;${display_cv}</i></label>
+        </li>
+        <li>
+          <label for="display_radar" class="w3-bar-item w3-button"><i
+               class="fa fa-rocket">&nbsp;${display_radar}</i></label>
+        </li>
+        <li>
+          <label for="display_vehicle" class="w3-bar-item w3-button"><i
+               class="fa fa-car">&nbsp;${display_vehicle}</i></label>
+        </li>
+      </ul>
+    </section>
+  </header>
+  <input type="file" id="open_file" name="open_file" multiple hidden>
+
+  <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+    <input aria-label="b" type="range" name="b" value="50" /> +
+    <input aria-label="a" type="number" name="a" value="10" /> =
+    <output name="result"></output>
+  </form>
+
+</body>
+
+</html>
