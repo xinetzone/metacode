@@ -110,6 +110,28 @@
           Add to favorites
         </button>
       </form>
+
+      <dialog id="favDialog">
+        <form method="dialog">
+          <p><label>Favorite animal:
+              <select>
+                <option></option>
+                <option>Brine shrimp</option>
+                <option>Red panda</option>
+                <option>Spider monkey</option>
+              </select>
+            </label></p>
+          <menu>
+            <button value="cancel">Cancel</button>
+            <button id="confirmBtn" value="default">Confirm</button>
+          </menu>
+        </form>
+      </dialog>
+
+      <menu>
+        <button id="updateDetails">Update details</button>
+      </menu>
+
       <output aria-live="polite"></output>
       <div class="w3-container">
         <h2>W3.CSS Modal</h2>
