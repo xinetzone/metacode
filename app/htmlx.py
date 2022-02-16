@@ -4,11 +4,7 @@ from . import load_option
 
 class Template:
     def __get__(self, obj, objtype=None):
-        path = obj.template_path
-        if path:
-            return load_template(path)
-        else:
-            return {}
+        return load_template(path) if (path := obj.template_path) else {}
 
 
 class Html:
@@ -20,11 +16,7 @@ class Html:
         self._configure = self.reset()
 
     def reset(self):
-        path = self._config_path
-        if path:
-            return load_option(path)
-        else:
-            return {}
+        return load_option(path) if (path := self._config_path) else {}
 
     @property
     def config(self):
